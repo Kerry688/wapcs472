@@ -1,0 +1,55 @@
+body {
+    background-color: #595647;
+}
+body, header, nav, #section, #moods .body, footer {
+    /*border-style: groove;*/
+}
+header, h2{
+    color: #97c0ff;
+}
+header{
+    margin-bottom: 50px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: bold;
+}
+nav, .body{
+    color: #f8f7ea;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 100%;
+}
+nav{
+    padding-bottom: 10px;
+}
+nav span{
+    color: #eaea74;
+}
+#movies p{
+    font-style: italic;
+}
+li a{
+    color: #cd5358;
+}
+#moods p{
+    color: #fffdef;
+    display: inline-block;
+    /*border-style: groove;*/
+}
+.happy, .sad{
+    float: bottom;
+    /*border-style: groove;*/
+    display: inline-block;
+}
+.happy{
+    width: 200px;
+    height: 200px;
+}
+.sad{
+    width: 200px;
+    height: 200px;
+}
+.validateHtml{
+    padding-left: 40%;
+
+}
