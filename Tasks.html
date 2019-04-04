@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styleme.css">
+</head>
+<body>
+
+
+<form>
+
+
+    <div class="Task"><span>Task List</span></div>
+    <br />
+
+    <label>Task</label>
+    <br />
+    <input type="text" name="Task"  Class="input"  placeholder="Write Task" />
+    <br />   <br />
+    <label>Required By</label>
+    <br />
+    <input type="date" name="Required Date"   Class="input"   />
+    <br />   <br />
+    <label>Category</label>
+    <br />
+    <select name="Category"  Class="input"  >
+        <option>Personal</option>
+        <option>Bussiness</option>
+        <option>Work</option>
+        <option>Home</option>
+        <option selected>Personal</option>
+    </select>
+
+    <br /> <br />
+    <input type="submit" value="Save Task" class="btn"/>    <input type="submit" value="Clear Task" class="btn"/>
+    <br /> <br />  <br />
+
+
+    <table id="Tasks">
+        <tr>
+            <th>Name </th>  <th>Due</th>  <th> Category</th>
+        </tr>
+
+
+        <tr>
+            <td>Return Library Books </td>  <td>2019-01-01</td>  <td>Personl</td>
+        </tr>
+
+
+        <tr>
+            <td>Perform project demo to stakeholders </td>  <td>2019-03-03</td>  <td>Work</td>
+        </tr>
+
+
+        <tr>
+            <td>Meet Friends for dinner </td>  <td>2019-02-02</td>  <td>Personl</td>
+        </tr>
+
+    </table>
+
+
+    <br />
+    <input type="submit" value="Add Task"  class="btn" />
+
+
+    <br />
+    <br />
+
+    <div class="Task"> You Have 3 Tasks</div>
+    <br />
+
+
+</form>
+
+</body>
+</html>
