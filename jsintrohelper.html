@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        /* runs test to see if expected argument is === to value returned by function2test argument */
+        function myFunctionTest(expected, function2test) {
+            if (expected === function2test()) {
+                return "TEST SUCCEEDED";
+            } else {
+                return "TEST FAILED.  Expected " + expected + " found " + function2test();
+            }
+            ;
+        }
+
+        /* max returns the maximum of 2 arguments */
+        function max(a, b) {
+            if (a > b) {
+                return a;
+            } else {
+                return b;
+            }S
+            ;
+        }
+        console.log("Expected output of max(20,10) is 20  " + myFunctionTest(20, function () {
+            return max(20, 10);
+        }));
+
+
+       ;
+
+        function isVowel(c)
+        {
+            if(c == "a" || c == "i" || c == "o" || c == "e" || c == "u" )
+            {
+                return true;
+            }
+              else
+            {
+                return false;
+            }
+        }
+
+
+
+        function Sum(arr)
+        {
+            var total = 0;
+            for(var i=0; i < arr.length; i++)
+            {
+                total += arr[i];
+            }
+            return total;
+        }
+        console.log("Sum for array  [1,2,3,4]: " + Sum([1,2,3,4]));
+
+
+
+
+        function multiply(arr)
+        {
+            var total = 1;
+            for(var i=0; i < arr.length; i++)
+            {
+                total *= arr[i];
+            }
+            return total;
+        }
+        console.log("multiply for array  [1,2,3,4]: " + multiply([1,2,3,4]));
+
+
+
+
+        /* max3 takes 3 numbers as arguments and returns the largest */
+        function maxOfThree(a, b, c) {
+            return max(max(a, b), c);
+        }
+
+        console.log("Expected output of maxOfThree(5,4,44) is 44  " + myFunctionTest(44, function () {
+            return maxOfThree(5, 4, 44);
+        }));
+        console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55, function () {
+            return maxOfThree(55, 4, 44);
+        }));
+        console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(4, function () {
+            return maxOfThree(55, 4, 44);
+        }));
+    </script>
+</head>
+<body>
+
+Look in the Chrome developer console to see the output. CTRL_SHIFT_J
+
+</body>
+</html>

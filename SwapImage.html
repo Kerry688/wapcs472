@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<img src="Karim.png" id="img1" alt="Karim Ismail" width="265" height="265">
+
+
+<button id="btn1" onclick="myfunc()" class="btn"> Swap </button>
+
+
+<script>
+
+    function myfunc()
+    {
+         var  imagename =  document.getElementById("img1").src;
+       // alert(imagename);
+
+        var imgurl = imagename.indexOf(imagename);
+
+        alert(imgurl);
+
+
+         if(imagename == "http://localhost:4454/wapcs472/Karim.png")
+         {
+             document.getElementById("img1").src = "test.jpg";
+         }
+         else
+         {
+             document.getElementById("img1").src = "Karim.png";
+         }
+
+    }
+
+</script>
+
+</body>
+</html>
